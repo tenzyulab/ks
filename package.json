@@ -1,6 +1,6 @@
 {
   "name": "@tenzyu/ks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A kick-starter for the Typescript projects.",
   "repository": "github:tenzyu/ks",
   "license": "MIT",
