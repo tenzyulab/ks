@@ -1,0 +1,10 @@
+{
+  "extends": "@tenzyu/tsconfig/lib.json",
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "es2022",
+    "moduleResolution": "node",
+    "noEmit": true
+  },
+  "include": ["src"]
+}
