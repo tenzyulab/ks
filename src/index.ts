@@ -1,10 +1,9 @@
 #!/usr/bin/env zx
 
-import 'zx/globals'
+import { $ } from 'zx'
 import { VITE_REACT } from './templates'
-
-const main = async () => {
-  const basepath = process.argv[3] ?? '.'
+;(async () => {
+  const basepath = process.argv[2] ?? '.'
 
   await $`mkdir -p ${basepath}`
   Object.entries(VITE_REACT).forEach(([filename, content]) => {
@@ -12,6 +11,4 @@ const main = async () => {
   })
   await $`pnpm update`
   await $`pnpm outdated`
-}
-
-main()
+})()
