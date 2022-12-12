@@ -19,8 +19,8 @@ const options = {
   entryPoints: ['./src/index.ts'],
   watch: flags.has('--watch'),
   platform: 'node',
-  target: 'es2022',
-  format: 'esm',
+  target: 'es2018',
+  format: 'cjs',
 }
 
 build(options).catch(() => process.exit(1))
