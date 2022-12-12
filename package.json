@@ -1,5 +1,5 @@
 {
-  "name": "ks",
+  "name": "@tenzyu/ks",
   "version": "0.1.0",
   "description": "A kick-starter for the Typescript projects.",
   "repository": "github:tenzyu/ks",
