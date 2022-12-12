@@ -1,0 +1,37 @@
+{
+  "name": "ks",
+  "version": "0.1.0",
+  "description": "A kick-starter for the Typescript projects.",
+  "repository": "github:tenzyu/ks",
+  "license": "MIT",
+  "author": "Tenzyu Masuda",
+  "type": "module",
+  "bin": "./bin/ks",
+  "scripts": {
+    "build": "rimraf dist && node build.js --minify"
+  },
+  "lint-staged": {
+    "*": "prettier --write --cache --ignore-unknown",
+    "!(package).json": "sort-json",
+    "package.json": "sort-package-json"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "dependencies": {
+    "zx": "^7.1.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@tenzyu/tsconfig": "^0.1.4",
+    "esbuild": "^0.16.4",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "rimraf": "^3.0.2",
+    "sort-package-json": "^2.1.0",
+    "typescript": "^4.9.4"
+  }
+}
