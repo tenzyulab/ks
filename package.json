@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Tenzyu Masuda",
   "bin": {
-    "ks": "bin/ks.mjs"
+    "ks": "bin/ks"
   },
   "files": [
     "bin",
